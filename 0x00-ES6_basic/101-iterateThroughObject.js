@@ -1,6 +1,6 @@
 export default function iterateThroughObject(reportWithIterator) {
-  const format = '';
-  const count = 0;
+  let format = '';
+  co count = 0;
   for (const employee of reportWithIterator) {
     format += employee;
     if (count !== reportWithIterator.length - 1) {
@@ -8,4 +8,5 @@ export default function iterateThroughObject(reportWithIterator) {
     }
   }
 
+  return format;
 }
