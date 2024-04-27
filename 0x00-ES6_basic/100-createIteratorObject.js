@@ -1,4 +1,5 @@
 export default function createIteratorObject(report) {
-  new A
+  newArray = [];
+  for (const key )
   return [...report.allEmployees];
 }
