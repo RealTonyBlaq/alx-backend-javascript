@@ -4,7 +4,8 @@ export default function iterateThroughObject(reportWithIterator) {
   for (const employee of reportWithIterator) {
     format += employee;
     if (count !== reportWithIterator.length - 1) {
-        
+      format += ' | ';
     }
   }
+
 }
