@@ -1,4 +1,4 @@
 export default function createIteratorObject(report) {
-  values = Object.values(re)
-  return [report.allEmployees];
+  const values = Object.values(report);
+  return values;
 }
