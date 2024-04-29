@@ -5,7 +5,7 @@ async function handleProfileSignup(firstName, lastName, filename) {
   if (firstName && lastName && filename) {
     const signup = await signUpUser(firstName, lastName);
     const upload = await uploadPhoto(filename);
-    return 
+    return []
   }
   throw Error;
 }
