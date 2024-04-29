@@ -10,9 +10,9 @@ async function handleProfileSignup(firstName, lastName, filename) {
 
     const signUpResult = {
       status: signUp.status,
-      value: signUp.status === 'fulfilled' ? signUp.value : null
+      value: signUp
     };
-    
+
     const uploadResult = {
       status: upload.status,
       value: upload.status === 'fulfilled' ? upload.value : null
