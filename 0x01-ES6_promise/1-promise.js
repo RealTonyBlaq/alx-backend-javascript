@@ -1,3 +1,3 @@
 export default getFullResponseFromAPI(success) {
-  if (success)
+  const myPromise = new Promise((resolve, ))
 }
