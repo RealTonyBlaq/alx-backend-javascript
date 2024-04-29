@@ -10,12 +10,12 @@ async function handleProfileSignup(firstName, lastName, filename) {
 
     const signUpResult = {
       status: signUp.status,
-      value: signUp,
+      value: signUp.status === 'fulfilled' ? signUp.value : signUp.reason.message,
     };
 
     const uploadResult = {
       status: upload.status,
-      value: upload,
+      value: upload.status === 'fulfilled' ? upload.value : upload.reason.message,
     };
 
     return [signUpResult, uploadResult];
