@@ -4,5 +4,5 @@ export default function handleProfileSignup() {
   const uploaded = uploadPhoto();
   const created = createUser();
 
-  
+  Promise.all([uploaded])
 }
