@@ -3,11 +3,11 @@ import uploadPhoto from './5-photo-reject';
 
 async function handleProfileSignup(firstName, lastName, filename) {
   if (firstName && lastName && filename) {
-    const signUp = await new signUpUser(firstName, lastName);
-    const upload = await new uploadPhoto(filename);
+    const signUp = await signUpUser(firstName, lastName);
+    const upload = await uploadPhoto(filename);
     return ([{ status, signUp }, { status, upload }]);
   }
-  throw Error;
+  throw new Error();
 }
 
 export default handleProfileSignup;
