@@ -3,11 +3,11 @@ import uploadPhoto from './5-photo-reject';
 
 async function handleProfileSignup(firstName, lastName, filename) {
   if (firstName && lastName && filename) {
-    const signUp = await signUpUser(firstName, lastName);
-    const upload = await uploadPhoto(filename);
+    const signUpPromise = await signUpUser(firstName, lastName);
+    const uploadPromise = await uploadPhoto(filename);
 
     const [signUp, upload] = await Promise.allSettled([signUpPromise, uploadPromise]);
-    
+
     const signUpResult = {
       status: signUp.status,
       value: signUp.status === 'fulfilled' ? signUp.value : null
