@@ -1,1 +1,3 @@
-export default 
+export default getFullResponseFromAPI(success) {
+  if (success)
+}
