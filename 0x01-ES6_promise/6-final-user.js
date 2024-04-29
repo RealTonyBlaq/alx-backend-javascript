@@ -3,9 +3,9 @@ import uploadPhoto from './5-photo-reject';
 
 async function handleProfileSignup(firstName, lastName, filename) {
   if (firstName && lastName && filename) {
-    const signup = await new signUpUser(firstName, lastName);
+    const signUp = await new signUpUser(firstName, lastName);
     const upload = await new uploadPhoto(filename);
-    return ([{ status, signup }, { status, upload }]);
+    return ([{ status, signUp }, { status, upload }]);
   }
   throw Error;
 }
