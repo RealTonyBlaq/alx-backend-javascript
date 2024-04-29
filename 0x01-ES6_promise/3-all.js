@@ -6,6 +6,6 @@ export default function handleProfileSignup() {
 
   Promise.all([uploaded, created])
   .then(() => {
-    console.log(`${}`)
+    console.log(`${uploaded.body} $`)
   })
 }
