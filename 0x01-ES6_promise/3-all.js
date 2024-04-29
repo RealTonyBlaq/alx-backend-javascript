@@ -5,5 +5,7 @@ export default function handleProfileSignup() {
   const created = createUser();
 
   Promise.all([uploaded, created])
-  .then(())
+  .then(() => {
+    console.log(`${}`)
+  })
 }
