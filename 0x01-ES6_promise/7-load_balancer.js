@@ -1,3 +1,3 @@
 export default function loadBalancer(chinaDownload, USDownload) {
-  const myPromise = Promise.
+  const myPromise = Promise.any()
 }
