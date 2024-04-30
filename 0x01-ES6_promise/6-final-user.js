@@ -6,7 +6,11 @@ async function handleProfileSignup(firstName, lastName, filename) {
     const signUpPromise = signUpUser(firstName, lastName);
     const uploadPromise = uploadPhoto(filename);
 
-    const [signUp, upload] = await Promise.allSettled([signUpPromise, uploadPromise]);
+    const [signUp, upload] = await Promise.allSettled([signUpPromise, uploadPromise])
+      .catch((error) => {
+        console.error(new Error('Error signing up the User'), error);
+        return ([]);
+      });
 
     const signUpResult = {
       status: signUp.status,
@@ -20,7 +24,7 @@ async function handleProfileSignup(firstName, lastName, filename) {
 
     return [signUpResult, uploadResult];
   }
-  throw new Error();
+  throw new Error('Incomplete parameters');
 }
 
 export default handleProfileSignup;
