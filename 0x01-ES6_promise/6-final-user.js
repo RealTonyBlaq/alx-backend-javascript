@@ -11,8 +11,8 @@ function handleProfileSignup(firstName, lastName, filename) {
         status: result.status,
         value: result.value === 'fulfilled' ? result.value : result.reason.message,
       })))
-      .catch((error) => {
-        console.error(new Error('Error signing up the User'), error);
+      .catch(() => {
+        console.error(new Error('Error signing up the User'));
         return ([]);
       });
   }
