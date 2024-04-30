@@ -9,11 +9,10 @@ function handleProfileSignup(firstName, lastName, filename) {
     return Promise.allSettled([signUpPromise, uploadPromise])
       .then((values) => values.map((result) => ({
         status: result.status,
-        value: result.value === 'fulfilled' ? result.value : result.reason.message,
+        value: result.status === 'fulfilled' ? result.value : result.reason.message,
       })))
       .catch(() => {
-        console.error(new Error('Error signing up the User'));
-        return ([]);
+        console.log(new Error('Error occurred'));
       });
   }
   throw new Error('Incomplete parameters');
