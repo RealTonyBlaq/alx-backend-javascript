@@ -31,5 +31,5 @@ export default class Pricing {
     return `${this._amount} ${this._currency.displayFullCurrency()}`;
   }
 
-  static 
+  static convertPrice()
 }
