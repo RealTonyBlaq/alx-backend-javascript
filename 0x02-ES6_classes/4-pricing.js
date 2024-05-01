@@ -27,5 +27,7 @@ export default class Pricing {
     else throw new TypeError('Currency must be an instance of the class Currency');
   }
 
-  displayFullPrice
+  displayFullPrice() {
+    return `${this._amount}`
+  }
 }
