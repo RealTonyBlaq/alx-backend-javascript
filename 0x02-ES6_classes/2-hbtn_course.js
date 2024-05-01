@@ -12,5 +12,9 @@ export default class HolbertonCourse {
     else throw new TypeError('Students must be an array');
   }
 
-  get name
+  get name() {
+    return this._name;
+  }
+
+  set name()
 }
