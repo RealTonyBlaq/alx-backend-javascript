@@ -12,4 +12,9 @@ export default class Pricing {
   get amount() {
     return this._amount;
   }
+
+  set amount(value) {
+    if (typeof value === 'number') this._amount = value;
+    else throw new TypeError('Amount must be a number');
+  }
 }
