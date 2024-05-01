@@ -17,6 +17,6 @@ export default class HolbertonCourse {
   }
 
   set name(value) {
-    if (value typeof)
+    if (typeof value === String) this
   }
 }
