@@ -23,7 +23,7 @@ export default class Pricing {
   }
 
   set currency(valueFunction) {
-    if (currency instanceof Currency) this._currency = currency;
+    if (valueFunction instanceof Currency) this._currency = valueFunction;
     else throw new TypeError('Currency must be an instance of currency');
   }
 
