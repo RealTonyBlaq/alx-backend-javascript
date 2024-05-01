@@ -25,7 +25,7 @@ export default class Currency {
     else throw new TypeError('Name must be a string');
   }
 
-  function displayFullCurrency() {
-    return ``
+  displayFullCurrency() {
+    return `${this._name} (${})`
   }
 }
