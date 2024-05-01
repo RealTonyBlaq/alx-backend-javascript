@@ -25,7 +25,7 @@ export default class Currency {
     else throw new TypeError('Name must be a string');
   }
 
-  function name(params) {
+  function displayFullCurrency() {
     
   }
 }
