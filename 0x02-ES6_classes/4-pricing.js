@@ -32,6 +32,6 @@ export default class Pricing {
   }
 
   static convertPrice(amount, conversionRate) {
-    if ()
+    if (typeof amount === 'number' && typeof conversionRate === 'n')
   }
 }
