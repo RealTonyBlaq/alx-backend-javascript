@@ -6,8 +6,7 @@ export default class Pricing {
     else throw new TypeError('Amount must be a number');
 
     if (currency instanceof Currency) this._currency = currency;
-    else throw new TypeError('Currency must be an instance of currency')
-
+    else throw new TypeError('Currency must be an instance of currency');
   }
 
   get amount() {
