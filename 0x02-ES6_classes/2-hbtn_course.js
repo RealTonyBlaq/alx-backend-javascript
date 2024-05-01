@@ -31,6 +31,10 @@ export default class HolbertonCourse {
   }
 
   get students() {
-    return this._students
+    return this._students;
+  }
+
+  set students(value) {
+
   }
 }
