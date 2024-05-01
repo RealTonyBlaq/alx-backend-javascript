@@ -3,7 +3,7 @@ export default class HolbertonCourse {
     if (typeof name === String) {
       this._name = name;
     } else {
-      
+      throw new TypeError('')
     }
   }
 }
