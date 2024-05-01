@@ -21,7 +21,11 @@ export default class Currency {
   }
 
   set name(value) {
-    if (typeof name === 'string') this._name = name;
+    if (typeof value === 'string') this._name = value;
     else throw new TypeError('Name must be a string');
+  }
+
+  function name(params) {
+    
   }
 }
