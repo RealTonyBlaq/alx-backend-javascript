@@ -26,6 +26,6 @@ export default class Currency {
   }
 
   function displayFullCurrency() {
-    
+    return ``
   }
 }
