@@ -8,6 +8,7 @@ export default class HolbertonCourse {
     if (typeof length === Number) this._length = length;
     else throw new TypeError('Length must be a number');
 
-    if (typeof students === Array)
+    if (typeof students === Array) this._students = students;
+    else throw new TypeError 
   }
 }
