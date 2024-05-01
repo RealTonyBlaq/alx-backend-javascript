@@ -28,6 +28,6 @@ export default class Pricing {
   }
 
   displayFullPrice() {
-    return `${this._amount}`
+    return `${this._amount} ${this._currency.displayFullPrice}`
   }
 }
