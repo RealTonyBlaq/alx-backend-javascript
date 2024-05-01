@@ -16,5 +16,7 @@ export default class HolbertonCourse {
     return this._name;
   }
 
-  set name()
+  set name(value) {
+    if (value typeof)
+  }
 }
