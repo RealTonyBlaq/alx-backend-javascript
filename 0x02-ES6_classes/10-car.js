@@ -7,6 +7,6 @@ export default class Car {
 
   /* creates a new instance of a Car class */
   cloneCar() {
-    return this;
+    return new this;
   }
 }
