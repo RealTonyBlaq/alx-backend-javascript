@@ -5,7 +5,7 @@ export default class Car {
     this._color = color;
   }
 
-  /* creates a new instance of a Car class */
+  /* creates and returns a new instance of a Car class */
   cloneCar() {
     return this;
   }
