@@ -8,7 +8,7 @@ export default function updateStudentGradeByCity(listOfStudents, city, newGrades
   const IDs = newGrades.reduce((acc, obj) => acc.push(obj.studentId), [])
   newGrades.forEach((updateObj) => {
     students.filter((student) => student.id === updateObj.studentId).map((obj) => {
-        if ()
+        if (obj.id in )
     })
   })
 }
