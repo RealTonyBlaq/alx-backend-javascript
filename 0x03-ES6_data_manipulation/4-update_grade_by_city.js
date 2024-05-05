@@ -7,12 +7,14 @@ export default function updateStudentGradeByCity(listOfStudents, city, newGrades
   const students = getStudentsByLocation(listOfStudents, city);
 
   newGrades.forEach((updateObj) => {
+    /* eslint-disable array-callback-return */
     students.filter((student) => student.id === updateObj.studentId).map((obj) => {
-        obj.grade = updateObj.grade;
+      /* eslint-disable no-param-reassign */
+      obj.grade = updateObj.grade;
     });
   });
   students.forEach((studentObj) => {
-    if (! studentObj.grade) studentObj.grade = 'N/A';
+    if (!studentObj.grade) studentObj.grade = 'N/A';
   });
   return students;
 }
