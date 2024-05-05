@@ -7,7 +7,7 @@ export default function updateStudentGradeByCity(listOfStudents, city, newGrades
   const students = getStudentsByLocation(listOfStudents, city);
   newGrades.forEach((updateObj) => {
     students.filter((student) => student.id === updateObj.studentId).map((obj) => {
-        
+        if 
     })
   })
 }
