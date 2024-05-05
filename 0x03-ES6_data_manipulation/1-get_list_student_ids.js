@@ -1,6 +1,6 @@
 export default function getListStudentIds(arrayOfObjects) {
   const IDs = [];
-  if (Array.isArray)
+  if (Array.isArray(arrayOfObjects))
   for (const obj of arrayOfObjects) {
     IDs.push(obj.id);
   }
