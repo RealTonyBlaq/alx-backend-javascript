@@ -1,4 +1,7 @@
 export default function getListStudentIds(arrayOfObjects) {
-  for ()
+  const IDs = [];
+  for (const obj of arrayOfObjects) {
+    
+  }
   return IDs;
 }
