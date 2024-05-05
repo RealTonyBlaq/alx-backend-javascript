@@ -8,7 +8,8 @@ export default function updateStudentGradeByCity(listOfStudents, city, newGrades
   const IDs = newGrades.reduce((acc, obj) => acc.push(obj.studentId), [])
   newGrades.forEach((updateObj) => {
     students.filter((student) => student.id === updateObj.studentId).map((obj) => {
-        if (obj.id in IDs) obj.grade = updateObj.grade
-    })
+        if (obj.id in IDs) obj.grade = updateObj.grade;
+        else obj.grade = 'N/A';
+    });
   })
 }
