@@ -3,5 +3,5 @@ export default function getListStudents() {
   const st2 = { id: 2, firstName: 'James', location: 'Columbia' };
   const st3 = { id: 5, firstName: 'Serena', location: 'San Francisco' };
 
-  return 
+  return [st1, st2, st3];
 }
