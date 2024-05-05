@@ -11,7 +11,7 @@ export default function updateStudentGradeByCity(listOfStudents, city, newGrades
   }, []);
   newGrades.forEach((updateObj) => {
     students.filter((student) => student.id === updateObj.studentId).map((obj) => {
-        if (obj.id in IDs) obj.grade = updateObj.grade;
+        if (IDs.includes(obj.id)) obj.grade = updateObj.grade;
         else obj.grade = 'N/A';
     });
   });
