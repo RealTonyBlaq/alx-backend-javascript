@@ -11,5 +11,6 @@ export default function updateStudentGradeByCity(listOfStudents, city, newGrades
         if (obj.id in IDs) obj.grade = updateObj.grade;
         else obj.grade = 'N/A';
     });
-  })
+  });
+  return students;
 }
