@@ -7,7 +7,7 @@ export default function cleanSet(set, startString) {
 
   if (startString !== '') {
     for (const elem of set.keys()) {
-      if (elem.startsWith(startString)) {
+      if (typeof elem === 'string' && elem.startsWith(startString)) {
         value.push(elem.substring(startString.length));
       }
     }
