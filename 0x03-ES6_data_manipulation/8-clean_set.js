@@ -5,7 +5,7 @@ start with a specific string (startString).
 export default function cleanSet(set, startString) {
   const value = [];
 
-  if (startString !== '') {
+  if (typeof startString === 'string' && startString !== '') {
     for (const elem of set.keys()) {
       if (typeof elem === 'string' && elem.startsWith(startString)) {
         value.push(elem.substring(startString.length));
