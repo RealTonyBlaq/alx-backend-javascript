@@ -1,0 +1,9 @@
+/*
+updateUniqueItems - Returns an updated map for all items with initial quantity at 1
+*/
+export default function updateUniqueItems(map) {
+  map.forEach((value, key) => {
+    if (value === 1) map.set(key, 100);
+  });
+  return map;
+}
