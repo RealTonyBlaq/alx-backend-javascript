@@ -10,9 +10,9 @@ interface Student {
 const student1: Student = {
   firstName: "John",
   lastName: "Doe",
-    age: 25,
-    location: "New York",
-  };
+  age: 25,
+  location: "New York",
+};
   
   const student2: Student = {
     firstName: "Jane",
