@@ -41,7 +41,7 @@ function renderTable() {
       locationCell.textContent = student.location;
       rowElement.appendChild(locationCell);
   
-      // Add the row to the table
+    /* Add the row to the table */
       tableElement.appendChild(rowElement);
     });
   
