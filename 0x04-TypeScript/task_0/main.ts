@@ -1,15 +1,15 @@
 /* Define the student interface */
 interface Student {
-    firstName: string;
-    lastName: string;
-    age: number;
-    location: string;
+  firstName: string;
+  lastName: string;
+  age: number;
+  location: string;
 }
   
-  // Create two students
+// Create two students
 const student1: Student = {
-    firstName: "John",
-    lastName: "Doe",
+  firstName: "John",
+  lastName: "Doe",
     age: 25,
     location: "New York",
   };
