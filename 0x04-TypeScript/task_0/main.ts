@@ -5,7 +5,7 @@ interface Student {
   age: number;
   location: string;
 }
-  
+
 // Create two students
 const student1: Student = {
   firstName: "John",
@@ -13,12 +13,12 @@ const student1: Student = {
   age: 25,
   location: "New York",
 };
-  
-  const student2: Student = {
-    firstName: "Jane",
-    lastName: "Doe",
-    age: 22,
-    location: "San Francisco",
+
+const student2: Student = {
+  firstName: "Jane",
+  lastName: "Doe",
+  age: 22,
+  location: "San Francisco",
   };
   
   // Create an array of students
