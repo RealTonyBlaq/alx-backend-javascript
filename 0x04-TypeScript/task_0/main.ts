@@ -31,8 +31,8 @@ function renderTable() {
   studentsList.forEach((student) => {
     const rowElement = document.createElement("tr");
   
-      // Create a cell for the first name
-      const firstNameCell = document.createElement("td");
+    /* Create a cell for the first name */
+  const firstNameCell = document.createElement("td");
       firstNameCell.textContent = student.firstName;
       rowElement.appendChild(firstNameCell);
   
