@@ -19,12 +19,12 @@ const student2: Student = {
   lastName: "Doe",
   age: 22,
   location: "San Francisco",
-  };
+};
   
-  // Create an array of students
-  const studentsList: Student[] = [student1, student2];
+/* Create an array of students */
+const studentsList: Student[] = [student1, student2];
   
-  // Function to render the table
+// Function to render the table
   function renderTable() {
     // Get the table element
     const tableElement = document.createElement("table");
