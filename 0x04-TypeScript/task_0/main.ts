@@ -27,10 +27,9 @@ const studentsList: Student[] = [student1, student2];
 /* Function to render the table */
 function renderTable() {
   const tableElement = document.createElement("table");
-  
-    // Loop through the studentsList and add a row for each student
-    studentsList.forEach((student) => {
-      const rowElement = document.createElement("tr");
+
+  studentsList.forEach((student) => {
+    const rowElement = document.createElement("tr");
   
       // Create a cell for the first name
       const firstNameCell = document.createElement("td");
