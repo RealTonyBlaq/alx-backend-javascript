@@ -32,8 +32,8 @@ function renderTable() {
     const rowElement = document.createElement("tr");
   
     /* Create a cell for the first name */
-  const firstNameCell = document.createElement("td");
-      firstNameCell.textContent = student.firstName;
+    const firstNameCell = document.createElement("td");
+    firstNameCell.textContent = student.firstName;
       rowElement.appendChild(firstNameCell);
   
       // Create a cell for the location
