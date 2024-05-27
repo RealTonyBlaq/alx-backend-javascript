@@ -45,9 +45,9 @@ function renderTable() {
       tableElement.appendChild(rowElement);
     });
 
-    // Append the table to the document
+    /* Append the table to the document */
     document.body.appendChild(tableElement);
 }
 
-/* Call the renderTable function to display the table
-  renderTable();
+/* Call the renderTable function to display the table */
+renderTable();
