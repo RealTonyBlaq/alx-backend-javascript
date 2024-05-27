@@ -49,5 +49,4 @@ function renderTable() {
     document.body.appendChild(tableElement);
 }
 
-/* Call the renderTable function to display the table */
 renderTable();
