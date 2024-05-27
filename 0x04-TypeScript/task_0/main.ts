@@ -40,14 +40,14 @@ function renderTable() {
       const locationCell = document.createElement("td");
       locationCell.textContent = student.location;
       rowElement.appendChild(locationCell);
-  
+
     /* Add the row to the table */
       tableElement.appendChild(rowElement);
     });
-  
+
     // Append the table to the document
     document.body.appendChild(tableElement);
-  }
-  
-  // Call the renderTable function to display the table
+}
+
+/* Call the renderTable function to display the table
   renderTable();
