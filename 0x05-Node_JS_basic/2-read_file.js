@@ -12,14 +12,10 @@ function countStudents(path) {
         const key = value.split(',')[-1];
         if (!(key in sortedData)) {
           sortedData.key = [];
+          sortedData.key.push()
         }
       });
 
-    for (const info of arrayBuffer) {
-      const studentDetail = info.split(',');
-      sortedData.studentDetail[0] = 
-      
-    }
     } catch (err) {
         throw Error('Cannot load the database');
     }
