@@ -1,3 +1,3 @@
 function displayMessage(arg) {
-  process.
+  process.stdout.write(arg + '/n');
 }
