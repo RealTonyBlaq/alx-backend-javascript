@@ -2,7 +2,7 @@ const reader = require('node:fs');
 
 function countStudents(path) {
   if (path) {
-    let content;
+    let contents;
     try {
       contents = reader.readFileSync(path, 'utf-8');
     } catch (err) {
@@ -10,6 +10,7 @@ function countStudents(path) {
     }
 
     const arrayBuffer = contents.split('\n').slice(1, -1);
+    
     console.log(`Number of students: ${arrayBuffer.length}`);
 
     const sortedData = {};
