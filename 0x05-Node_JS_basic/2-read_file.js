@@ -19,7 +19,9 @@ function countStudents(path) {
         }
       });
 
-      Object.keys(sortedData).forEach((value) => {})
+      Object.keys(sortedData).forEach((value) => {
+        
+      });
 
     } catch (err) {
         throw Error('Cannot load the database');
