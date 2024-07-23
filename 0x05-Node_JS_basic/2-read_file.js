@@ -9,7 +9,7 @@ function countStudents(path) {
       throw Error('Cannot load the database');
     }
 
-    const arrayBuffer = contents.split('\n').slice(1, -1);
+    const arrayBuffer = contents.split('\n').slice(1);
 
     console.log(`Number of students: ${arrayBuffer.length}`);
 
