@@ -12,7 +12,7 @@ function countStudents(path) {
     const arrayBuffer = contents.split('\n').slice(1);
     let numOfStudents = 0;
     arrayBuffer.forEach((value) => {
-      if 
+      if (value ) 
     });
     console.log(`Number of students: ${arrayBuffer.length}`);
 
