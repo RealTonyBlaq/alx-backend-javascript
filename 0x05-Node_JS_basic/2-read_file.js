@@ -1,3 +1,7 @@
 function countStudents(path) {
-  if ()
+  if (path) {
+    let
+  } else {
+    throw Error('Cannot load the database');
+  }
 }
