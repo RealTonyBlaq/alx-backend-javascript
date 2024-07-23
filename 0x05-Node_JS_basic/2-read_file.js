@@ -20,7 +20,7 @@ function countStudents(path) {
       });
 
       Object.keys(sortedData).forEach(key => {
-        console.log(`Number of students in ${key}: ${sortedData[key].length}. List: ${sor}`)
+        console.log(`Number of students in ${key}: ${sortedData[key].length}. List: ${sortedData[key].join(', ')}`);
       });
 
     } catch (err) {
