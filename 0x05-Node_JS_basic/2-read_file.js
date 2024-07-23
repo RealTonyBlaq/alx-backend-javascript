@@ -5,7 +5,7 @@ function countStudents(path) {
     try {
         const contents = reader.readFileSync(path, 'utf-8');
     } catch (err) {
-        console.log()
+        throw Error('Cannot load the database');
     }
     const arrayBuffer = contents.split('\n').slice(1, -1);
     for (const student of arrayBuffer) {
