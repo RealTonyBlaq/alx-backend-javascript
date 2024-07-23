@@ -19,7 +19,7 @@ function countStudents(path) {
         }
       });
 
-      sortedData.
+      sortedData.entries()
 
     } catch (err) {
         throw Error('Cannot load the database');
