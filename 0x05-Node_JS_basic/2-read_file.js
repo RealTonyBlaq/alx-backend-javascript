@@ -10,6 +10,7 @@ function countStudents(path) {
     for (const info of arrayBuffer) {
       const studentDetail = info.split(',');
       
+      
     }
     } catch (err) {
         throw Error('Cannot load the database');
