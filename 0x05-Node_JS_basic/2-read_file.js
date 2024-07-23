@@ -7,7 +7,7 @@ function countStudents(path) {
       const arrayBuffer = contents.split('\n').slice(1, -2);
       console.log(`Number of students: ${arrayBuffer.length}`);
 
-      const sortedData = {}
+      const sortedData = {};
       arrayBuffer.forEach((value) => {
         const info = value.split(',');
         const key = info[-1];
@@ -19,7 +19,7 @@ function countStudents(path) {
         }
       });
 
-      sortedData.entries()
+      sortedData.forEach()
 
     } catch (err) {
         throw Error('Cannot load the database');
