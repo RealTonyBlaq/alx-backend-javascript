@@ -20,7 +20,7 @@ function countStudents(path) {
       });
 
       Object.keys(sortedData).forEach(key => {
-        console.log(`Number of students in FIELD: 6. List: LIST_OF_FIRSTNAMES`)
+        console.log(`Number of students in ${key}: ${sortedData[key].length}. List: LIST`)
       });
 
     } catch (err) {
