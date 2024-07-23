@@ -16,7 +16,7 @@ function countStudents(path) {
       if (value !== '') numOfStudents++; 
     });
 
-    console.log(`Number of students: ${$num}`);
+    console.log(`Number of students: ${numOfStudents}`);
 
     const sortedData = {};
     arrayBuffer.forEach((value) => {
