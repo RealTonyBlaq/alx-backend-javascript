@@ -12,8 +12,8 @@ function countStudents(path) {
         const info = value.split(',');
         const key = info[-1];
         if (!(key in sortedData)) {
-          sortedData.key = [];
-          sortedData.key.push(info[0]);
+          sortedData[key] = [];
+          sortedData[key].push(info[0]);
         } else {
           sortedData.key.push(info[0]);
         }
