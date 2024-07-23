@@ -1,2 +1,3 @@
 console.log('Welcome to Holberton School, what is your name?');
-process.stdin.read()
+const name = process.stdin.read()
+console.log()
