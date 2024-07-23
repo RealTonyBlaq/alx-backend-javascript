@@ -9,7 +9,7 @@ function countStudents(path) {
       const sortedData = {}
     for (const info of arrayBuffer) {
       const studentDetail = info.split(',');
-      
+      sortedData.studentDetail[0] = 
       
     }
     } catch (err) {
