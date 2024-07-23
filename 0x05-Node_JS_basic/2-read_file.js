@@ -15,11 +15,11 @@ function countStudents(path) {
           sortedData[key] = [];
           sortedData[key].push(info[0]);
         } else {
-          sortedData.key.push(info[0]);
+          sortedData[key].push(info[0]);
         }
       });
 
-      sortedData.forEach()
+      for const 
 
     } catch (err) {
         throw Error('Cannot load the database');
