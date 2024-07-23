@@ -13,9 +13,8 @@ function countStudents(path) {
         const key = info[info.length - 1];
         if (!(sortedData.hasOwnProperty(key))) {
           sortedData[key] = [];
-        } else {
-          sortedData[key].push(info[0]);
         }
+        sortedData[key].push(info[0]);
       });
 
       Object.keys(sortedData).forEach(key => {
