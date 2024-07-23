@@ -11,10 +11,12 @@ function countStudents(path) {
 
     const arrayBuffer = contents.split('\n').slice(1);
     let numOfStudents = 0;
+
     arrayBuffer.forEach((value) => {
-      if (value !== '')n 
+      if (value !== '') numOfStudents++; 
     });
-    console.log(`Number of students: ${arrayBuffer.length}`);
+
+    console.log(`Number of students: ${$num}`);
 
     const sortedData = {};
     arrayBuffer.forEach((value) => {
