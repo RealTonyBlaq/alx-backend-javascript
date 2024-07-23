@@ -20,8 +20,8 @@ function countStudents(path) {
         const key = info[info.length - 1];
         if (!(key in sortedData)) {
           sortedData[key] = [];
-      }
-      sortedData[key].push(info[0]);
+        }
+        sortedData[key].push(info[0]);
       }
     });
 
