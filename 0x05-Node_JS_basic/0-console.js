@@ -1,1 +1,3 @@
-function displayMessage(arg: String)
+function displayMessage(arg) {
+  process.
+}
