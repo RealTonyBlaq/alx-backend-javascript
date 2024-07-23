@@ -1,5 +1,5 @@
 console.log('Welcome to Holberton School, what is your name?');
-const name = process.stdin.
+process.stdin.on('data', function (input))
 console.log(`Your name is: ${name}`);
 
 process.on('SIGINT', () => {
