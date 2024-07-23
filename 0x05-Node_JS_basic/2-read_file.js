@@ -1,4 +1,5 @@
-import { readFile } from 'node:fs';
+const reader = require('node:fs');
+
 function countStudents(path) {
   if (path) {
     readFile(path, (err, data) => {
