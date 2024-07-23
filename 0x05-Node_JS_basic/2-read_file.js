@@ -1,7 +1,7 @@
 const reader = require('node:fs')
 function countStudents(path) {
   if (path) {
-    reader.read(())
+    reader.readFile
   } else {
     throw Error('Cannot load the database');
   }
