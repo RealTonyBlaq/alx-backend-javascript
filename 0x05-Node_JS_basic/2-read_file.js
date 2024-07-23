@@ -10,7 +10,7 @@ function countStudents(path) {
       const sortedData = {};
       arrayBuffer.forEach(value => {
         const info = value.split(',');
-        const key = info[-1];
+        const key = info[info.length - 1];
         if (!(sortedData.hasOwnProperty(key))) {
           sortedData[key] = [];
           sortedData[key].push(info[0]);
