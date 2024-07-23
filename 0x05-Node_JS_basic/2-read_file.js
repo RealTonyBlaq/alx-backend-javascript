@@ -5,7 +5,7 @@ function countStudents(path) {
     try {
       const contents = reader.readFileSync(path, 'utf-8');
       const arrayBuffer = contents.split('\n').slice(1, -2);
-      console.log(`Number of students: ${arrayBuffer.length}`)
+      console.log(`Number of students: ${arrayBuffer.length}`);
       const sortedData = {}
     for (const info of arrayBuffer) {
       const studentDetail = info.split(',');
