@@ -1,3 +1,3 @@
 function countStudents(path) {
-  
+  if ()
 }
