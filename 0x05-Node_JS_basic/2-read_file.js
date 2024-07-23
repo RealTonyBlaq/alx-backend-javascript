@@ -8,7 +8,7 @@ function countStudents(path) {
       console.log(`Number of students: ${arrayBuffer.length}`)
     for (const info of arrayBuffer) {
       const studentDetail = info.split(',');
-      if 
+      if (studentDetail.includes())
     }
     } catch (err) {
         throw Error('Cannot load the database');
