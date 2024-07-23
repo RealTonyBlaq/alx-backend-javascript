@@ -1,1 +1,1 @@
-function 
+function displayMessage(arg: String)
