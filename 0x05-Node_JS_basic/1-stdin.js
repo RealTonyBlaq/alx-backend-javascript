@@ -5,5 +5,5 @@ console.log(`Your name is: ${name}`);
 
 process.on('SIGINT', () => {
   console.log('This important software is now closing');
-  process
+  process.exit(0)
 });
