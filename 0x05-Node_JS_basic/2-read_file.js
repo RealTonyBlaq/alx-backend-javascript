@@ -15,7 +15,7 @@ function countStudents(path) {
           sortedData.key = [];
           sortedData.key.push(info[0]);
         } else {
-          
+          sortedData.key.push()
         }
       });
 
