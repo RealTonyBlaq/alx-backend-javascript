@@ -13,7 +13,9 @@ function countStudents(path) {
     let numOfStudents = 0;
 
     arrayBuffer.forEach((value) => {
-      if (value !== '') numOfStudents++; 
+      if (value !== '') {
+        numOfStudents += 1;
+      }
     });
 
     console.log(`Number of students: ${numOfStudents}`);
