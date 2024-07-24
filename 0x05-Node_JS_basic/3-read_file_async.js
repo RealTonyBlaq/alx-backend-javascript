@@ -4,16 +4,15 @@ function countStudents(path) {
   if (path) {
     reader.readFile(path, 'utf-8', (err, contents) => {
       if (err) throw new Error('Cannot load the database');
-      const 
-    });
 
-    const arrayBuffer = contents.split('\n').slice(1);
-    let numOfStudents = 0;
+      const arrayBuffer = contents.split('\n').slice(1);
+      let numOfStudents = 0;
 
-    arrayBuffer.forEach((value) => {
+      arrayBuffer.forEach((value) => {
       if (value !== '') {
         numOfStudents += 1;
       }
+    });
     });
 
     console.log(`Number of students: ${numOfStudents}`);
