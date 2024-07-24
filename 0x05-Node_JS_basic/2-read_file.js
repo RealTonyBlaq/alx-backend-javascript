@@ -1,4 +1,4 @@
-const reader = require('node:fs');
+const reader = require('fs');
 
 function countStudents(path) {
   if (path) {
