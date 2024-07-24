@@ -30,8 +30,9 @@ function countStudents(path) {
 
       Object.keys(sortedData).forEach((key) => {
         console.log(`Number of students in ${key}: ${sortedData[key].length}. List: ${sortedData[key].join(', ')}`);
+      });
     });
-    });
+    return new Promise()
   } else {
     throw new Error('Cannot load the database');
   }
