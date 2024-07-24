@@ -4,7 +4,7 @@ function countStudents(path) {
   if (path) {
     let contents;
     try {
-      contents = reader;
+      contents = reader.readFile(path);
     } catch (err) {
       throw new Error('Cannot load the database');
     }
