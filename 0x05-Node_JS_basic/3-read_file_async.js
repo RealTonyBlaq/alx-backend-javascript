@@ -26,10 +26,10 @@ function countStudents(path) {
           }
           sortedData[key].push(info[0]);
         }
-    });
+      });
 
-    Object.keys(sortedData).forEach((key) => {
-      console.log(`Number of students in ${key}: ${sortedData[key].length}. List: ${sortedData[key].join(', ')}`);
+      Object.keys(sortedData).forEach((key) => {
+        console.log(`Number of students in ${key}: ${sortedData[key].length}. List: ${sortedData[key].join(', ')}`);
     });
     });
   } else {
