@@ -4,7 +4,7 @@ function countStudents(path) {
   if (path) {
     let contents;
     try {
-      contents = reader.readFileSync(path, 'utf-8');
+      contents = reader;
     } catch (err) {
       throw new Error('Cannot load the database');
     }
