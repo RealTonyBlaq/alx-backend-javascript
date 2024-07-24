@@ -6,7 +6,7 @@ function countStudents(path) {
     try {
       contents = reader.readFileSync(path, 'utf-8');
     } catch (err) {
-      throw Error('Cannot load the database');
+      throw new Error('Cannot load the database');
     }
 
     const arrayBuffer = contents.split('\n').slice(1);
@@ -34,7 +34,7 @@ function countStudents(path) {
       console.log(`Number of students in ${key}: ${sortedData[key].length}. List: ${sortedData[key].join(', ')}`);
     });
   } else {
-    throw Error('Cannot load the database');
+    throw new Error('Cannot load the database');
   }
 }
 
