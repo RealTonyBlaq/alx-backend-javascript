@@ -12,7 +12,9 @@ function countStudents(path) {
       if (value !== '') {
         numOfStudents += 1;
       }
-    });
+      });
+
+    
     });
   } else {
     throw new Error('Cannot load the database');
