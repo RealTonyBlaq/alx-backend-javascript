@@ -2,11 +2,7 @@ const reader = require('fs');
 
 function countStudents(path) {
   if (path) {
-    let contents;
-    contents = reader.readFile(path, 'utf-8');
-    } catch (err) {
-      throw new Error('Cannot load the database');
-    }
+    reader.readFile(path, 'utf-8', (err));
 
     const arrayBuffer = contents.split('\n').slice(1);
     let numOfStudents = 0;
