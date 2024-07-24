@@ -14,24 +14,6 @@ function countStudents(path) {
       }
     });
     });
-
-    console.log(`Number of students: ${numOfStudents}`);
-
-    const sortedData = {};
-    arrayBuffer.forEach((value) => {
-      if (value !== '') {
-        const info = value.split(',');
-        const key = info[info.length - 1];
-        if (!(key in sortedData)) {
-          sortedData[key] = [];
-        }
-        sortedData[key].push(info[0]);
-      }
-    });
-
-    Object.keys(sortedData).forEach((key) => {
-      console.log(`Number of students in ${key}: ${sortedData[key].length}. List: ${sortedData[key].join(', ')}`);
-    });
   } else {
     throw new Error('Cannot load the database');
   }
