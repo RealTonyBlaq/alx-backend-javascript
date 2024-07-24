@@ -4,6 +4,7 @@ function countStudents(path) {
   if (path) {
     reader.readFile(path, 'utf-8', (err, contents) => {
       if (err) throw new Error('Cannot load the database');
+      
     });
 
     const arrayBuffer = contents.split('\n').slice(1);
