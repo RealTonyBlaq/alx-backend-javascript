@@ -32,7 +32,7 @@ function countStudents(path) {
         console.log(`Number of students in ${key}: ${sortedData[key].length}. List: ${sortedData[key].join(', ')}`);
       });
     });
-    return new Promise()
+    return new Promise.resolve()
   } else {
     throw new Error('Cannot load the database');
   }
