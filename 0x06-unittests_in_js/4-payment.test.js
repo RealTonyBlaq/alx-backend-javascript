@@ -9,7 +9,7 @@ describe('sendPaymentRequestToApi', () => {
     const consoleSpy = sinon.spy(console, 'log');
 
     // creating a stub on the function
-    const fnStub = sinon
+    const fnStub = sinon.stub()
     // call the function we are testing
     sendPaymentRequestToApi(100, 20);
 
