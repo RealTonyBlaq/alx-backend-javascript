@@ -3,7 +3,8 @@ function calculateNumber(type, a, b) {
   a = Math.round(a);
   if (type === 'SUM') return (a + b);
   if (type === 'SUBTRACT') return (b - a);
-  if (type === 'DIVIDE')
+  if (type === 'DIVIDE' && b !== 0) return (a / b);
+  else r
 }
 
 module.exports = calculateNumber;
