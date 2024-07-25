@@ -11,6 +11,8 @@ describe('sendPaymentRequestToApi', () => {
   });
 
   afterEach(() => {
-    
+    consoleSpy.restore();
   });
+
+  it('should ')
 });
