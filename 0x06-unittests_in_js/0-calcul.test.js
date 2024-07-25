@@ -6,5 +6,9 @@ describe('Test calculateNumber', () => {
     assert.equal(calculateNumber(0.5, 0.2), 1);
   });
 
-  it('should return 2 with inputs 0.5 and 0.7', () => {});
+  it('should return 2 with inputs 0.5 and 0.7', () => {
+    assert.equal(calculateNumber(0.5, 0.7), 2);
+  });
+
+  
 });
