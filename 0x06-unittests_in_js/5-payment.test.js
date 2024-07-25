@@ -14,5 +14,7 @@ describe('sendPaymentRequestToApi', () => {
     consoleSpy.restore();
   });
 
-  it('should ')
+  it('should verify that the console is logging the string "The total is: 120"', () => {
+    
+  });
 });
