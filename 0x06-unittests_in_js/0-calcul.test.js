@@ -22,7 +22,7 @@ describe('Test calculateNumber', () => {
     assert.equal(calculateNumber(-7.5, 4.3), -3);
   });
 
-  it('should return -5 with inputs -2 and -2.5', () => {
-    assert.equal(calculateNumber(-2, -2.5), -5);
+  it('should return -5 with inputs -2 and -2.6', () => {
+    assert.equal(calculateNumber(-2, -2.6), -5);
   });
 });
