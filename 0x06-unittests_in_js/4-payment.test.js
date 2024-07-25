@@ -27,10 +27,10 @@ describe('sendPaymentRequestToApi', () => {
     sendPaymentRequestToApi(100, 20);
 
     // Expect console.log to be called with the correct message
-    expect(logStub.calledOnce).to.be.true;
-    expect(logStub.firstCall.args[0]).to.equal('The total is: 10');
+    expect(consoleSpy.calledOnce).to.be.true;
+    expect(consoleSpy.firstCall.args[0]).to.equal('The total is: 10');
 
     // Restore the original function after testing
-    logStub.restore();
+    consoleSpy.restore();
   });
 });
