@@ -9,12 +9,13 @@ describe('sendPaymentRequestToApi', () => {
     const consoleSpy = sinon.spy(console, 'log');
 
     // creating a stub on the function
-    const fnStub = sinon.stub(Utils, 'calculateNumber')
+    const fnStub = sinon.stub(Utils, 'calculateNumber').returns(10);
+
     // call the function we are testing
     sendPaymentRequestToApi(100, 20);
 
     // Expect the spy to have been called with the correct arguments
-    expect(calculateNumberSpy.calledOnce).to.be.true;
+    expect(calculat.calledOnce).to.be.true;
     expect(calculateNumberSpy.calledWith('SUM', 100, 20)).to.be.true;
 
     // restore the original function after testing
