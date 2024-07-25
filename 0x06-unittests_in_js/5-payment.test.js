@@ -15,8 +15,9 @@ describe('sendPaymentRequestToApi', () => {
   });
 
   it('should verify that the console is logging the string "The total is: 120"', () => {
+    const consoleSpy = sinon.spy(console, 'log');
     sendPaymentRequestToApi(100, 20);
 
-    expect(consoleSpy)
+    expect(consoleSpy.calledOnce)
   });
 });
