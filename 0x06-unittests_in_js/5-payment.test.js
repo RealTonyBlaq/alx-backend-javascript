@@ -7,6 +7,10 @@ describe('sendPaymentRequestToApi', () => {
   let consoleSpy;
 
   beforeEach(() => {
-    cons
+    consoleSpy = sinon.spy(console, 'log');
+  });
+
+  afterEach(() => {
+    
   });
 });
