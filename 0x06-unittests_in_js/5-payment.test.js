@@ -17,6 +17,6 @@ describe('sendPaymentRequestToApi', () => {
   it('should verify that the console is logging the string "The total is: 120"', () => {
     sendPaymentRequestToApi(100, 20);
 
-    
+    expect(consoleSpy)
   });
 });
