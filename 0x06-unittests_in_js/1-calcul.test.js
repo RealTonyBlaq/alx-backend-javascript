@@ -12,15 +12,15 @@ describe('calculateNumber', () => {
     });
 
     it('should return 1 with inputs 0.5 and 0.2', () => {
-      assert.equal(calculateNumber(0.5, 0.2), 1);
+      assert.equal(calculateNumber('SUM', 0.5, 0.2), 1);
     });
 
     it('should return 2 with inputs 0.5 and 0.7', () => {
-      assert.equal(calculateNumber(0.5, 0.7), 2);
+      assert.equal(calculateNumber('SUM', 0.5, 0.7), 2);
     });
 
     it('should return 0 with inputs 0.4 and 0.3', () => {
-      assert.equal(calculateNumber(0.4, 0.3), 0);
+      assert.equal(calculateNumber('SUM', 0.4, 0.3), 0);
     });
 
     it('should return 3 with inputs 1.2 and 1.7', () => {
