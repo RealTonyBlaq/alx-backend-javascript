@@ -1,6 +1,7 @@
 function calculateNumber(type, a, b) {
-  b = M
-  if (type === 'SUM') return (Math.round(a) + Math.round(b));
+  b = Math.round(b);
+  a = Math.round(a);
+  if (type === 'SUM') return (a + b);
   if (type === 'SUBTRACT') return (Math.round(b) - Math.round(a))
 }
 
