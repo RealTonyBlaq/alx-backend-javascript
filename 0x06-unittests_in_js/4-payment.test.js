@@ -15,11 +15,11 @@ describe('sendPaymentRequestToApi', () => {
     sendPaymentRequestToApi(100, 20);
 
     // Expect the spy to have been called with the correct arguments
-    expect(calculat.calledOnce).to.be.true;
-    expect(calculateNumberSpy.calledWith('SUM', 100, 20)).to.be.true;
+    expect(fnStub.calledOnce).to.be.true;
+    expect(fnStub.calledWith('SUM', 100, 20)).to.be.true;
 
     // restore the original function after testing
-    calculateNumberSpy.restore();
+    fnStub.restore();
   });
 
   it('should log the correct sum to the console', () => {
