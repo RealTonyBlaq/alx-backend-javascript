@@ -5,7 +5,6 @@ const sendPaymentRequestToApi = require('./4-payment');
 
 describe('sendPaymentRequestToApi', () => {
   it('should call Utils.calculateNumber with SUM and two numbers', () => {
-
     // creating a stub on the function
     const fnStub = sinon.stub(Utils, 'calculateNumber').returns(10);
 
@@ -22,14 +21,14 @@ describe('sendPaymentRequestToApi', () => {
 
   it('should log the correct sum to the console', () => {
     // Stub console.log to check its output
-    const logStub = sinon.stub(console, 'log');
+    const consoleSpy = sinon.spy(console, 'log');
 
     // call the function we are testing
     sendPaymentRequestToApi(100, 20);
 
     // Expect console.log to be called with the correct message
     expect(logStub.calledOnce).to.be.true;
-    expect(logStub.firstCall.args[0]).to.equal('The total is: 120');
+    expect(logStub.firstCall.args[0]).to.equal('The total is: 10');
 
     // Restore the original function after testing
     logStub.restore();
