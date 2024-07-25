@@ -24,15 +24,15 @@ describe('calculateNumber', () => {
     });
 
     it('should return 3 with inputs 1.2 and 1.7', () => {
-      assert.equal(calculateNumber(1.2, 1.7), 3);
+      assert.equal(calculateNumber('SUM', 1.2, 1.7), 3);
     });
 
     it('should return -3 with inputs -7.5 and 4.3', () => {
-      assert.equal(calculateNumber(-7.5, 4.3), -3);
+      assert.equal(calculateNumber('SUM', -7.5, 4.3), -3);
     });
 
     it('should return -5 with inputs -2 and -2.6', () => {
-      assert.equal(calculateNumber(-2, -2.6), -5);
+      assert.equal(calculateNumber('SUM', -2, -2.6), -5);
     });
   });
 
