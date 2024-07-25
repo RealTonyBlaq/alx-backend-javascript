@@ -23,6 +23,7 @@ describe('sendPaymentRequestToApi', () => {
     // Stub console.log to check its output
     const consoleSpy = sinon.spy(console, 'log');
     const fnStub = sinon.stub(Utils, 'calculateNumber').returns(10);
+
     // call the function we are testing
     sendPaymentRequestToApi(100, 20);
 
@@ -32,5 +33,6 @@ describe('sendPaymentRequestToApi', () => {
 
     // Restore the original function after testing
     consoleSpy.restore();
+    fnStub.restore();
   });
 });
