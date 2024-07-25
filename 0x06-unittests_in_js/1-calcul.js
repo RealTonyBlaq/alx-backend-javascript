@@ -1,10 +1,10 @@
 function calculateNumber(type, a, b) {
-  b = Math.round(b);
-  a = Math.round(a);
-  if (type === 'SUM') return (a + b);
-  if (type === 'SUBTRACT') return (b - a);
-  if (type === 'DIVIDE' && b !== 0) return (a / b);
-  else return 'Error';
+  const d = Math.round(b);
+  const c = Math.round(a);
+  if (type === 'SUM') return (c + d);
+  if (type === 'SUBTRACT') return (d - c);
+  if (type === 'DIVIDE' && b !== 0) return (c / d);
+  return 'Error';
 }
 
 module.exports = calculateNumber;
