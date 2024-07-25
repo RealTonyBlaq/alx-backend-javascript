@@ -4,6 +4,6 @@ const sinon = require('sinon');
 const sendPaymentRequestToApi = require('./5-payment');
 
 describe('sendPaymentRequestToApi', () => {
-  let Spy = sinon.spy(Utils, 'calculateNumber');
-
+  let moduleSpy = sinon.spy(Utils, 'calculateNumber');
+  let consoleSpy = sinon.stub(console)
 });
