@@ -6,9 +6,10 @@ const sendPaymentRequestToApi = require('./4-payment');
 describe('sendPaymentRequestToApi', () => {
   it('should call Utils.calculateNumber with SUM and two numbers', () => {
     // creating a spy on the console
-    const calculateNumberSpy = sinon.spy(console, 'log');
+    const consoleSpy = sinon.spy(console, 'log');
 
-    // creating a stub on the 
+    // creating a stub on the function
+    const fnStub = sinon
     // call the function we are testing
     sendPaymentRequestToApi(100, 20);
 
