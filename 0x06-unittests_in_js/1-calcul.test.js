@@ -58,5 +58,9 @@ describe('calculateNumber', () => {
     it('should return 1 when inputs are 1.4 and 1.4', () => {
       assert.strictEqual(calculateNumber('DIVIDE', 1.4, 1.4), 1);
     });
+
+    it('should return Error when inputs are 2.3 and 0.4', () => {
+        assert.strictEqual(calculateNumber('DIVIDE', 2.3, 0.4), 'Error');
+    });
   });
 });
