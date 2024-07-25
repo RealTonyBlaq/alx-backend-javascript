@@ -17,5 +17,6 @@ describe('Test calculateNumber', () => {
   it('should return 3 with inputs 1.2 and 1.7', () => {
     assert.equal(calculateNumber(1.2, 1.7), 3);
   });
-  
+
+  it('should return -4 with inputs -7.5 ')
 });
