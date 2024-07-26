@@ -7,3 +7,4 @@ app.get('/', (req, res) => {
     res.end('Welcome to the payment system');
 });
 
+app.listen(() => {});
