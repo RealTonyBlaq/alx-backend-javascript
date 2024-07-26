@@ -35,7 +35,7 @@ function countStudents(path) {
         resolve(sortedData);
       });
     } else {
-      reject (Error('Cannot load the database');
+      reject(Error('Cannot load the database'));
     }
   });
 }
