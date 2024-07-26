@@ -4,7 +4,7 @@ const app = express();
 const port = 7865;
 
 app.get('/', (req, res) => {
-    
+    console.log(`${req.}`)
     res.send('Welcome to the payment system');
 });
 
