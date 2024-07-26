@@ -22,5 +22,7 @@ describe('sendPaymentRequestToApi', () => {
     expect(consoleSpy.firstCall.args[0]).to.equal('The total is: 120');
   });
 
-  it('should ')
+  it('should verify that the console is logging the string "The total is: 20"', () => {
+    
+  });
 });
