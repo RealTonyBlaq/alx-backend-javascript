@@ -2,6 +2,6 @@ const { createServer } = require('http');
 
 const app = createServer((req, res) => {
   res.statusCode = 200;
-  res.
-  res.end('Hello Holberton School!')
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello Holberton School!');
 });
