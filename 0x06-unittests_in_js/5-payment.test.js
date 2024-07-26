@@ -18,6 +18,7 @@ describe('sendPaymentRequestToApi', () => {
     const consoleSpy = sinon.spy(console, 'log');
     sendPaymentRequestToApi(100, 20);
 
-    expect(consoleSpy.calledOnce)
+    expect(consoleSpy.calledOnce).to.be.true;
+    expect(consoleSpy.args[])
   });
 });
