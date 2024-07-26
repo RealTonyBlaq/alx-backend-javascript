@@ -1,5 +1,6 @@
 const { createServer } = require('http');
 
 const server = createServer((req, res) => {
-  res.end('')
+  if (req.)
+  res.end('Hello Holberton School!')
 });
