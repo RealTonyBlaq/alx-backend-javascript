@@ -19,6 +19,8 @@ describe('sendPaymentRequestToApi', () => {
     sendPaymentRequestToApi(100, 20);
 
     expect(consoleSpy.calledOnce).to.be.true;
-    expect(consoleSpy.firstCall.args[0]).to.eq
+    expect(consoleSpy.firstCall.args[0]).to.equal('The total is: 120');
   });
+
+  it('should ')
 });
