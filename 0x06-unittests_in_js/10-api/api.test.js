@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 const request = require('request');
 const { expect } = require('chai');
-const { response } = require('express');
 
 describe('Index page', () => {
   const url = 'http://localhost:7865';
@@ -41,7 +42,7 @@ describe('Index page', () => {
   });
 
   it('should return "Welcome Betty"', (done) => {
-    request.post({url: `${url}/login`, json: { userName: 'Betty' }}, (error, response, body) => {
+    request.post({ url: `${url}/login`, json: { userName: 'Betty' } }, (error, response, body) => {
       expect(body).to.equal('Welcome Betty');
       expect(response.statusCode).to.equal(200);
       done();
