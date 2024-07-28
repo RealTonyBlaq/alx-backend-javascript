@@ -4,7 +4,10 @@ function countStudents(path) {
   return new Promise((resolve, reject) => {
     if (path) {
       reader.readFile(path, 'utf-8', (err, contents) => {
-        if (err) throw new Error('Cannot load the database');
+        if (err) {
+          reject(new Error('Cannot load the database'));
+          return;
+        }
 
         const arrayBuffer = contents.split('\n').slice(1);
         let numOfStudents = 0;
@@ -35,7 +38,7 @@ function countStudents(path) {
         resolve(sortedData);
       });
     } else {
-      reject(Error('Cannot load the database'));
+      reject(new Error('Cannot load the database'));
     }
   });
 }
