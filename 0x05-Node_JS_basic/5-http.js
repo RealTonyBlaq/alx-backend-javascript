@@ -17,8 +17,16 @@ const app = http.createServer(async (req, res) => {
   else if (url === '/students') {
     res.write('This is the list of our students\n');
     try {
-      const students = await countStudents(args.toString());
-      res.end(`${students.join('\n')}`);
+      const students = await countStudents(args[0]);
+      let numberOfStudents = 0;
+      Object.values(students).forEach((value) => {
+        numberOfStudents += value.length;
+      });
+      const response = [`Number of students: ${numberOfStudents}`];
+      Object.keys(students).forEach((key) => {
+        response.push(`Number of students in ${key}: ${students[key].length}. List: ${students[key].join(', ')}`);
+      });
+      res.end(`${response.join('\n')}`);
     } catch (error) {
       res.end(error.message);
     }
