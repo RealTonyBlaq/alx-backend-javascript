@@ -32,6 +32,7 @@ class StudentsController {
           throw new Error('Cannot load the database');
         });
     }
-    thro
+    this.response.statusCode = 500;
+    this.response.send('Major parameter must be CS or SWE')
   }
 }
