@@ -8,5 +8,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/students', (req, res) => {
-  StudentsController.get
+  StudentsController.getAllStudents(req, res);
 });
+
+app.get('/students/:major')
