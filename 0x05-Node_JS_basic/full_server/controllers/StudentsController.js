@@ -19,6 +19,6 @@ class StudentsController {
     this.response = response;
     this.request = request;
 
-    
+    this.request.query.major
   }
 }
