@@ -3,5 +3,5 @@ const { StudentsController } = require('../controllers/StudentsController');
 import app from '../server';
 
 app.get('/', (req, res) => {
-  
+  AppController.
 });
