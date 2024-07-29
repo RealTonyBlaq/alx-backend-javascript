@@ -10,4 +10,6 @@ app.get('/students', (req, res) => {
   StudentsController.getAllStudents(req, res);
 });
 
-app.get('/students/:major', (req, res) => {});
+app.get('/students/:major', (req, res) => {
+  StudentsController.get
+});
