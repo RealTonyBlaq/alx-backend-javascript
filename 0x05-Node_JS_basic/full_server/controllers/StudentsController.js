@@ -16,6 +16,9 @@ class StudentsController {
   }
 
   getAllStudentsByMajor(request, response) {
-    this.response = request
+    this.response = response;
+    this.request = request;
+
+    
   }
 }
