@@ -20,5 +20,7 @@ class StudentsController {
     this.request = request;
 
     const major = this.request.query.major;
+
+    if (major )
   }
 }
