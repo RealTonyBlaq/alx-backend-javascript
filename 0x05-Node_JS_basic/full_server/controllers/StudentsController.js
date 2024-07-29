@@ -1,7 +1,7 @@
 const { readDatabase } = require('../utils')
 
 class StudentsController {
-  getAllStudents(request, response) {
+  static getAllStudents(request, response) {
     this.response = response;
     this.data = readDatabase('../../database.csv')
       .catch((error) => {
@@ -15,7 +15,7 @@ class StudentsController {
     this.response.send(`${responses.join('\n')}`);
   }
 
-  getAllStudentsByMajor(request, response) {
+  static getAllStudentsByMajor(request, response) {
     this.response = response;
     this.request = request;
 
