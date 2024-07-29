@@ -7,4 +7,4 @@ app.get('/', (req, res) => {
   AppController.getHomepage(req, response);
 });
 
-app.get
+app.get('/students')
