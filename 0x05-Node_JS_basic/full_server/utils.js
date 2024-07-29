@@ -1,9 +1,9 @@
-const reader = require('fs');
+import { readFile } from 'fs';
 
 function readDatabase(path) {
   return new Promise((resolve, reject) => {
     if (path) {
-      reader.readFile(path, 'utf-8', (err, contents) => {
+      readFile(path, 'utf-8', (err, contents) => {
         if (err) {
           reject(new Error('Cannot load the database'));
           return;
@@ -30,4 +30,4 @@ function readDatabase(path) {
   });
 }
 
-module.exports = readDatabase;
+export default readDatabase;
