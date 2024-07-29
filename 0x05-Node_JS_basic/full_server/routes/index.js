@@ -1,14 +1,13 @@
 const { AppController } = require('../controllers/AppController');
 const { StudentsController } = require('../controllers/StudentsController');
-import { response } from '../../6-http_express';
 import app from '../server';
 
 app.get('/', (req, res) => {
-  AppController.getHomepage(req, response);
+  AppController.getHomepage(req, res);
 });
 
 app.get('/students', (req, res) => {
   StudentsController.getAllStudents(req, res);
 });
 
-app.get('/students/:major')
+app.get('/students/:major', (req, res) => {});
