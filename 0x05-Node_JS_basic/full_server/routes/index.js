@@ -1,2 +1,2 @@
 const AppController = require('../controllers/AppController');
-const StudentsController
+const StudentsController = require('../controllers/StudentsController')
