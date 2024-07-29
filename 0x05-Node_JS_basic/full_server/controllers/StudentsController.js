@@ -15,5 +15,7 @@ class StudentsController {
     this.response.send(`${responses.join('\n')}`);
   }
 
-  getAllStudentsByMajor(response, )
+  getAllStudentsByMajor(request, response) {
+    this.response = request
+  }
 }
