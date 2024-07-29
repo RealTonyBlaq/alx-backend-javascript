@@ -32,5 +32,6 @@ class StudentsController {
           throw new Error('Cannot load the database');
         });
     }
+    thro
   }
 }
