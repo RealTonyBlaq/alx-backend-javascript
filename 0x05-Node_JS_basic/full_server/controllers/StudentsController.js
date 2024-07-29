@@ -12,6 +12,7 @@ class StudentsController {
     Object.keys(this.data).forEach((key) => {
       responses.push(`Number of students in ${key}: ${this.data[key].length}. List: ${this.data[key].join(', ')}`);
     });
+    this.response.statusCode = 200;
     this.response.send(`${responses.join('\n')}`);
   }
 
@@ -19,7 +20,7 @@ class StudentsController {
     this.response = response;
     this.request = request;
 
-    const major = this.request.major;
+    const major = this.request.params.major;
 
     if (major === 'CS' || major === 'SWE') {
       readDatabase('../../database.csv')
