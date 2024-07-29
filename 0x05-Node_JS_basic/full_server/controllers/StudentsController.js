@@ -24,7 +24,7 @@ class StudentsController {
     if (major === 'CS' || major === 'SWE') {
       readDatabase('../../database.csv')
         .then((data) => {
-          this.response.send()
+          this.response.send(`List: ${data[major].join()}`)
         })
         .catch((error) => {
           this.response.statusCode = 500;
