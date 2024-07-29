@@ -11,5 +11,5 @@ app.get('/students', (req, res) => {
 });
 
 app.get('/students/:major', (req, res) => {
-  StudentsController.get
+  StudentsController.getAllStudentsByMajor()
 });
