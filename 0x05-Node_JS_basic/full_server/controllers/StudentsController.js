@@ -23,7 +23,9 @@ class StudentsController {
 
     if (major === 'CS' || major === 'SWE') {
       const data = readDatabase('../../database.csv')
-      
+        .catch((error) => {
+            
+        });
     }
   }
 }
