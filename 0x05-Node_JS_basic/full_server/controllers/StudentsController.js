@@ -21,6 +21,8 @@ class StudentsController {
 
     const major = this.request.query.major;
 
-    if (major )
+    if (major === 'CS' || major === 'SWE') {
+      
+    }
   }
 }
