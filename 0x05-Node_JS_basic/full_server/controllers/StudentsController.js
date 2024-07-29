@@ -23,7 +23,9 @@ class StudentsController {
 
     if (major === 'CS' || major === 'SWE') {
       readDatabase('../../database.csv')
-        .then()
+        .then((data) => {
+          
+        })
         .catch((error) => {
           this.response.statusCode = 500;
           throw new Error('Major parameter must be CS or SWE');
