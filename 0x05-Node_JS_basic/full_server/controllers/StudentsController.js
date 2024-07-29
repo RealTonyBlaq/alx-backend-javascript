@@ -19,7 +19,7 @@ class StudentsController {
     this.response = response;
     this.request = request;
 
-    const major = this.request.query.major;
+    const major = this.request.major;
 
     if (major === 'CS' || major === 'SWE') {
       readDatabase('../../database.csv')
@@ -33,6 +33,6 @@ class StudentsController {
         });
     }
     this.response.statusCode = 500;
-    this.response.send('Major parameter must be CS or SWE')
+    this.response.send('Major parameter must be CS or SWE');
   }
 }
