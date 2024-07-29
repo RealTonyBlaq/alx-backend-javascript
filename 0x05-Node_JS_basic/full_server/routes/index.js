@@ -7,4 +7,6 @@ app.get('/', (req, res) => {
   AppController.getHomepage(req, response);
 });
 
-app.get('/students')
+app.get('/students', (req, res) => {
+  StudentsController.get
+});
