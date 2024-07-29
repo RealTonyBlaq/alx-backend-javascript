@@ -29,7 +29,7 @@ class StudentsController {
         })
         .catch((error) => {
           this.response.statusCode = 500;
-          throw new Error('Major parameter must be CS or SWE');
+          throw new Error('Cannot load the database');
         });
     }
   }
