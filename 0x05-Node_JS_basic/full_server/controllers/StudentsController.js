@@ -3,7 +3,7 @@ const { readDatabase } = require('../utils')
 class StudentsController {
   getAllStudents(request, response) {
     this.response = response;
-    this.data = readDatabase('../../')
+    this.data = readDatabase('../../database.csv')
       .catch((error) => {
         this.response.statusCode = 500;
         throw new Error('Cannot load the database');
@@ -22,6 +22,7 @@ class StudentsController {
     const major = this.request.query.major;
 
     if (major === 'CS' || major === 'SWE') {
+      const data = readDatabase('../../database.csv')
       
     }
   }
